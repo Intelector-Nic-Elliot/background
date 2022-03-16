@@ -1,0 +1,137 @@
+body {
+	font: 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+	background: linear-gradient(to right, red , yellow);
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    letter-spacing: .5em;
+    width: 100%;
+}
+
+h2 {
+	margin-top: 70px;
+	margin: 30px 30px 20px 30px;
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    text-transform: none;
+    letter-spacing: 0.01em;
+	margin: 0 30px 50px 30px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#pick, #generate {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgba(0,0,0,.5);
+	width: 40%;
+	height: 30vh;
+	padding: 20px;
+	margin: 20px;
+}
+
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+input {
+	border-radius: 10px/30px;
+	border: none;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+	padding: 15px;
+	margin: 10px;
+	height: 60px;
+	width: 60px;
+}
+
+button {
+	border-radius: 10px/30px;
+	border: none;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+	padding: 15px;
+	margin: 10px;
+	height: 70px;
+	width: 115px;
+	color: rgba(0,0,0,.7);
+	text-align: center;
+}
+
+input:hover, button:hover {
+cursor: pointer;
+}
+
+/*********************************
+ *  Media Queries
+ ********************************/
+@media (max-width: 700px) {
+	h1 {
+		font: 600 1.8em 'Raleway', sans-serif;
+	    letter-spacing: .3em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+		margin: 30px 30px 20px 30px;
+	}
+
+	h3 {
+		font: 600 1em 'Raleway', sans-serif;
+		margin: 0 30px 50px 30px;
+	}
+
+	p {
+		font-size: 0.8em;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	#pick, #generate {
+		width: 40%;
+		min-width: 150px;
+		height: 100%;
+		padding: 20px;
+		margin: 20px;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	input {
+		padding: 10px;
+		margin: 5px;
+	}
+
+	button {
+		padding: 10px;
+		margin: 5px;
+		height: 50px;
+		width: 110px;
+		font-size: 0.6em;
+	}
+}
+
+@media (max-height: 500px) {
+#pick, #generate {
+    height: 70vh;
+}
+}
